@@ -4,29 +4,36 @@
   <meta charset="utf-8">
   <title>Hillow = Hi + Hello + W at the end to make it prettier</title>
   <style>
+  html, body{
+    height: 100%;
+  }
+  body{
+    margin: 0px;
+  }
+  body{
+    background-color: #ffffff;
+  }
   h1{
     color: #FFFFFF;
     text-align: center;
     font-family: "Arial";
   }
   h2{
-    color: #ffffff;
+    color: #FFFFFF;
     font-family: "Arial";
     text-align: center;
-  }
-  body{
-    background-color: #fff5ee;
+    background-color: #000000;
+    padding: 4px 1px 4px 1px;
   }
   p{
     font-family: "Arial";
     text-align: justify;
   }
   li{
-    color: #ff3e96;
     font-family: "Arial"
   }
   ul{
-  list-style-type: none;
+    list-style-type: none;
   }
   b{
     color: #FF1493;
@@ -35,73 +42,93 @@
   }
   img{
     float: left;
-    }
- header{
- padding: 1em;
- background-color: #000000;
- text-align: center;
- }
- footer{
- padding: 1em;
-  background-color: #000000;
- text-align: center;
- color: #FFFFFF;
- }
- table{
-border-colapse: colapse;
-}
-table, td, th {
+  }
+  header{
+    padding: 1px 1px 1px 1px;
+    background-color: #000000;
+    text-align: center;
+  }
+  nav:not(.inlineBlock){
+    background-color: #000000;
+    color: #ffffff;
+  }
+  nav{
+    font-size: 20;
+    padding: 1px 1px 7px 1px;
+  }
+  article{
+    text-align: right;
+  }
+  footer{
+    padding: 1px 1px 1px 1px;
+    background-color: #000000;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  table{
+    border-colapse: colapse;
+  }
+  table, td, th {
     border: 1px solid #B5B5B5;
-    }
+  }
+  .inlineBlock{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .alignRight{
+    text-align: right;
+  }
   </style>
 </head>
 <body>
   <header><h1>Dados Gerais</h1></header>
-  <article>
-  <img src="https://scontent.fbsb9-1.fna.fbcdn.net/v/t1.0-9/16832133_1954668351423381_5179646320696338756_n.jpg?oh=900103631b891b12b8ac7839b08d60ac&oe=59280320" width="100" height ="100"/>
-  <table>
-   
-  <tr>
-    <td><b>Nome:</b></td>
-    <td>Éllen Oliveira Silva Neves</td>
-  </tr>
-  <tr>
-    <td><b>Idade:</b></td>
-    <td>14 anos</td>
-  </tr>
-  <tr>
-  <td><b>Nascida em:</b></td>
-    <td>Serra - ES</td>
-    </tr>
+  <nav><center>Sobre Mim | Habilidades | Blog | Contato | Portfólio</center></nav>
+  <nav class="inlineBlock">
+    <a href="https://www.facebook.com/ellen.neves.1675">Facebook</a><br/>
+    <a href="https://twitter.com/Eosn_S2">Twitter</a>
+  </nav>
+  <article class="inlineBlock alignRight">
+    <img src="https://scontent-gru2-2.xx.fbcdn.net/v/t1.0-9/17342898_1965687920321424_8806206953709897418_n.jpg?oh=99c026393989105c8f5e41efe47ac382&oe=59651B25" width="120" height ="120"/>
+    <table>
+      <tr>
+        <td><b>Nome:</b></td>
+        <td>Éllen Oliveira Silva Neves</td>
+      </tr>
+      <tr>
+        <td><b>Idade:</b></td>
+        <td>14 anos</td>
+      </tr>
+      <tr>
+        <td><b>Nascida em:</b></td>
+        <td>Serra - ES</td>
+      </tr>
+      <tr>
+        <td><b>Vive em:</b></td>
+        <td>Serra - ES</td>
+      </tr>
     </table>
-    </article>
-    <nav>
-      <ul>
-      <li><a href="https://www.facebook.com/ellen.neves.1675">Facebook - Éllen Neves</a></li>
-      <li><a href="https://twitter.com/Eosn_S2">Twitter - Eosn_S2</a></li>
-      </ul></nav>
-  <footer><h2>Copyright © Éllen Neves</h2></footer>
+  </article>
+  <h2>Informações Pessoais</h2>
+  <p><b>Hobbies:</b></p>
+  <ul>
+    <li>Desenhar</li>
+    <li>Cantar</li>
+    <li>Ler</li>
+    <li>Jogar</li>
+  </ul>
+  <p><b>O que quero aprender:</b></p>
+  <ul>
+    <li>Tocar violão</li>
+    <li>Programar</li>
+  </ul>
+  <h2>Mais</h2>
+  <p><i>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it.
+    <br>One of the reasons that I don't like the word 'famous' is because than people uses it afterwards. It's like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same guy after it. People thinks they can label your life." <b>- Harry Styles</b></i></p>
     <p></p>
+    <p><i>"One Direction is who we are and who we'll always be." <b>- Liam Payne</b></i></p>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yjmp8CoZBIo" frameborder="0" allowfullscreen></iframe></center>
     <p></p>
-    <footer><p><i>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it. One of the reasons that I don't like the word 'famous' is
-      <br>because than people uses it afterwards. It's like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same guy after it.
-      <br>People thinks they can label your life." - Harry Styles</i></p>
-      <p></p>
-      <p><i>"One Direction is who we are and who we'll always be." - Liam Payne</i></p></footer>
-      <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yjmp8CoZBIo" frameborder="0" allowfullscreen></iframe></center>
+    <footer><h3>Copyright © Éllen Neves</h3></footer>
+  </body>
+  </html>
 
-      <h2>Informações Pessoais</h2>
-      <p><b>Hobbies:</b></p>
-      <ul>
-        <li>Desenhar</li>
-        <li>Cantar</li>
-        <li>Ler</li>
-        <li>Jogar</li>
-      </ul>
-      <p><b>O que quero aprender:</b></p>
-      <ul>
-        <li>Tocar violão</li>
-        <li>Programar</li>
-      </ul>
-    </body>
-    </html>
