@@ -42,7 +42,7 @@
   }
   header{
     padding: 1px 1px 1px 1px;
-    background-color: #000000;
+    background-color: #3333FF;
     text-align: center;
   }
   nav:not(.inlineBlock){
@@ -58,7 +58,7 @@
   }
   footer{
     padding: 1px 1px 1px 1px;
-    background-color: #000000;
+    background-color: #3333FF;
     text-align: center;
     color: #FFFFFF;
   }
