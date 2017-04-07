@@ -8,7 +8,7 @@
     background-image: url(https://seriesporelas.com.br/wp-content/uploads/2016/10/bes.jpg);
     background-position: center bottom, center top;
     background-repeat: repeat;
-    padding: 50px;
+    padding: 100%;
   }
   h1{
     color: #FFFFFF;
@@ -19,7 +19,7 @@
     color: #FFFFFF;
     font-family: "Arial";
     text-align: center;
-    background-color: #000000;
+    background-color: #7D26CD;
     padding: 4px 1px 4px 1px;
   }
   p{
@@ -42,7 +42,7 @@
   }
   header{
     padding: 1px 1px 1px 1px;
-    background-color: #3333FF;
+    background-color: #7D26CD;
     text-align: center;
   }
   nav:not(.inlineBlock){
@@ -58,7 +58,7 @@
   }
   footer{
     padding: 1px 1px 1px 1px;
-    background-color: #3333FF;
+    background-color: #7D26CD;
     text-align: center;
     color: #FFFFFF;
   }
