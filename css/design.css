@@ -66,6 +66,7 @@
 table {
     border-collapse: collapse;
     width: 100%;
+  color: white;
 }
 
 th, td {
