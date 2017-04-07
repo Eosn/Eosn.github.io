@@ -2,7 +2,7 @@
     height: 100%;
   }
   body{
-    margin: 0px;
+    margin: 30px;
   }
   body{
     background-image: url(http://static.hdw.eweb4.com/media/wallpapers_1920x1080/cartoons/1/1/adventure-time-cartoon-hd-wallpaper-1920x1080-5116.png);
@@ -39,7 +39,7 @@
     font-size: 20;
   }
   img{
-    float: left;
+    float: right;
   }
   header{
     padding: 1px 1px 1px 1px;
