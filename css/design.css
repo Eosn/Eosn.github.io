@@ -67,6 +67,7 @@ table {
     border-collapse: collapse;
     width: 100%;
   color: white;
+  float: left;
 }
 
 th, td {
