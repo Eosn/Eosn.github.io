@@ -18,21 +18,23 @@
     color: #FFFFFF;
     font-family: "Arial";
     text-align: center;
-    background-color: #7D26CD;
+    background-color: #FF4040;
     padding: 4px 1px 4px 1px;
   }
   p{
     font-family: "Arial";
     text-align: justify;
+    color: white;
   }
   li{
-    font-family: "Arial"
+    font-family: "Arial";
+    color: white;
   }
   ul{
     list-style-type: none;
   }
   b{
-    color: #FF1493;
+    color: #912CEE;
     font-family: serif;
     font-size: 20;
   }
@@ -57,7 +59,7 @@
   }
   footer{
     padding: 1px 1px 1px 1px;
-    background-color: #7D26CD;
+    background-color: #FF4040;
     text-align: center;
     color: #FFFFFF;
   }
