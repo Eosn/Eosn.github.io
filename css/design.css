@@ -29,7 +29,7 @@
   li{
     font-family: "Arial";
     color: white;
-    text-align: center;
+    float: center;
   }
   ul{
     list-style-type: none;
