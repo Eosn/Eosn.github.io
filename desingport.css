@@ -5,7 +5,10 @@
     margin: 0px;
   }
   body{
-    background-color: #ffffff;
+    background-image: url(https://seriesporelas.com.br/wp-content/uploads/2016/10/bes.jpg);
+    background-position: center bottom, center top;
+    background-repeat: repeat;
+    padding: 50px;
   }
   h1{
     color: #FFFFFF;
