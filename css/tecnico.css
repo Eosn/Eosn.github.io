@@ -178,5 +178,9 @@ color: white;
 
 }
 b {
-  color: white
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: white;
 }
