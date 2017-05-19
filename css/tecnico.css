@@ -21,6 +21,9 @@ h2{
   background-color: #FF4040;
   padding: 4px 1px 4px 1px;
 }
+h3{
+  color: white;
+}
 p{
   font-family: "Arial";
   text-align: justify;
