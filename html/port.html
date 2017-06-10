@@ -1,64 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
-  <meta charset="utf-8">
   <title>Hillow - Portfólio</title>
-  <link rel="stylesheet" href="/css/desingport.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .margin {
+    margin-bottom: 45px;
+    color: #FFA6BA;
+  }
+  .title {
+    margin-bottom: 45px;
+  }
+  .Subtitle-1 {
+    color: #00FFA2;
+  }
+  
+  .bg-1 { 
+    background-color: #00FFA2;
+    color: #ffffff;
+  }
+  
+  .bg-2 { 
+    background-color: #5D0075;
+    color: #ffffff;
+  }
+  
+  .bg-3 { 
+    background-color: #2f2f2f;
+    color: #FFD9E1;
+  }
+  
+  .bg-4 { 
+    background-color: #FFFFFF;
+    color: #2f2f2f;
+  }
+  
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  
+  .navbar-nav  li a:hover {
+    color: #FF0037 !important;
+  }
+  .table {
+    color: white;
+  }
+  div.gallery {
+    margin: 1px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 180px;
+    color: white;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+    color: white;
+    float: center;
+  }
+  
+  div.gallery img {
+    width: calc(100% - 20px);
+    height: auto;
+    color: white;
+    float: center;
+  }
+  .flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+  </style>
 </head>
 <body>
-  <header><h1>Portfólio</h1></header>
-  <ul>
-    <li><a href="https://eosn.github.io/html/index.html">Dados Gerais</a></li>
-    <li class="dropdown">
-      <a href="javascript:void(0)" class="dropbtn">Portfólio</a>
-      <div class="dropdown-content">
-        <a href="https://eosn.github.io/html/port.html">Geral</a>
-        <a href="#">Português</a>
-        <a href="#">Matemática</a>
-        <a href="#">Física</a>
-        <a href="#">História</a>
-        <a href="#">Geografia</a>
-        <a href="#">Filosofia</a>
-        <a href="#">Sociologia</a>
-        <a href="#">Inglês</a>
-        <a href="#">Artes</a>
-        <a href="https://eosn.github.io/html/tecnico.html">Técnico</a>
+  
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-heart"></span>                     
+        </button>
+        <a class="navbar-brand" href="https://eosn.github.io/html/index.html">Hillow</a>
       </div>
-    </li>
-    <li><a href="https://www.facebook.com/ellen.neves.1675">Facebook</a></li>
-    <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
-    <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>  
-    <li><a href="https://www.wattpad.com/user/Lunnan_">Wattpad</a></li>
-  </ul>
-
-  <p><b>Algumas fotos e desenhos de minha autoria:</b></p>
-  <div class="flex">
-    <div class="gallery">
-      <a target="_blank" href="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17629718_1974196249470591_759634550331919875_n.jpg?oh=301365d99e65b18633aaedfeed78bff5&oe=594EC804">
-        <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17629718_1974196249470591_759634550331919875_n.jpg?oh=301365d99e65b18633aaedfeed78bff5&oe=594EC804" alt="Rainbow" width="150" height="150">
-      </a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.facebook.com/eosn.s2">Facebook</a></li>
+          <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
+          <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>
+          <li><a href="https://www.wattpad.com/user/Lunnan_">Wattpad</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://eosn.github.io/html/port.html">Portfólio <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://eosn.github.io/html/port.html">Geral</a></li>
+              <li><a href="https://eosn.github.io/html/tecnico.html">Técnico</a></li>
+            </ul>
+          </li>  
+        </ul>
+      </div>
     </div>
-
-    <div class="gallery">
-      <a target="_blank" href="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17098549_1958449644378585_9050091550744389729_n.jpg?oh=49392e41eef258514a5c696bc18e2534&oe=59898531">
-        <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17098549_1958449644378585_9050091550744389729_n.jpg?oh=49392e41eef258514a5c696bc18e2534&oe=59898531" alt="Hair" width="150" height="150">
-      </a>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/16807445_1951499431740273_4949282415738620027_n.jpg?oh=ab461ec08131000d0758e9781ba562f4&oe=5997D5A4">
-        <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/16807445_1951499431740273_4949282415738620027_n.jpg?oh=ab461ec08131000d0758e9781ba562f4&oe=5997D5A4" alt="Flor" width="150" height="150">
-      </a>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17499572_1969971569893059_207007494556486771_n.jpg?oh=7b664e97646f7fbdbc353896b22e3327&oe=5997CEBA">
-        <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/17499572_1969971569893059_207007494556486771_n.jpg?oh=7b664e97646f7fbdbc353896b22e3327&oe=5997CEBA" alt="Pôr-do-sol" width="150" height="150">
-      </a>
-    </div>
+  </nav>
+  
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="title">Portfólio</h3>
+    <h4>Fotos, desenhos, livros, sites, etc.</h4>
   </div>
-  <p>Algumas abas do portfólio serão usadas para publicação de material escolar.</p>
+  
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="Subtitle-1">Mulheres na Luta</h3>
+    <p>Site para informação e concientização a cerca da desigualdade entre gêneros e violência contra a mulher. Desenvolvido por alunos para trabalho escolar.
+      <br>Encontra-se disponível em inglês e português.
+      <br>Clique no botão para visitar o site.</p>
+      <a href="https://mulheresnaluta.github.io/" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-heart"></span>
+      </a>
+    </div>
+    
+    <div class="container-fluid bg-3 text-center">    
+      <h3 class="margin">Livros / Fanfics</h3><br>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Bruxos e Semideuses
+          <br>Dois mundos, agora unidos.</h3>
+           <div class="flex">
+          <div class="gallery">
+            <a target="_blank" href="http://my.w.tt/UiNb/Jwv79zxdSD">
+              <img src="https://a.wattpad.com/cover/103000638-256-k537851.jpg" alt="Bruxos e Semideuses: dois mundos, agora unidos.">
+            </a>
+          </div>
+        </div>
+        <p>E se os bruxos e bruxas do universo de Harry Potter fossem pessoas com parentesco com semideuses e fossem para escolas como Hogwarts, Ilvermony e Castelobruxo para aprender à dominar sua magia, canalizando-as em varinhas e, sendo assim, aqueles que possuíssem um parentesco mais próximo com os filhos de deuses (como acontece com semideuses) atraíssem monstros mais facilmente (dando mais uma explicação para o  porque de ter aparecido tantos monstros em Hogwarts quando Harry estava lá)?
+          <br>Isso é real.</p>
+        <p>Ally é uma jovem semideusa que teve que sair do Brasil e abandonar Castelobruxo para viver no Acampamento Meio Sangue por conta de seu parentesco: ela é filha de Poseidon. Agora ela está em seu segundo ano no Acampamento e iniciando o terceiro ano de estudos (primeiro em Hogwarts).
+          <br>Há tempos não surgem profecias e há tempos semideuses (ou descendentes) não precisam parar os estudos para ir em missões, mas algo de estranho está acontecendo. Ally deverá investigar se quiser saber o que está por trás do silêncio dos deuses.</p>
+
+     <p><center>｡･*.☆.*･｡</center></p>
 
 
-  <footer><h3>Copyright © Éllen Neves</h3></footer>
-</body>
-</html>
+<p>[Alguns personagens e locais pertencem à Rick Riordan e J.K. Rowling. Demais personagens pertencem à autora. Lembre-se: plágio é crime!]
+  <br>[Pode conter spoilers de Percy Jackson e Os Olimpianos, Os Heróis do Olimpo, As Provações de Apolo e Harry Potter.]</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Rabiscos
+          <br>Textos aleatórios.</h3>
+           <div class="flex">
+          <div class="gallery">
+            <a target="_blank" href="http://my.w.tt/UiNb/Jwv79zxdSD">
+              <img src="https://a.wattpad.com/cover/78261333-256-k534592.jpg" alt="Rabiscos">
+            </a>
+          </div>
+        </div>
+        <p>Textos, pensamentos, questionamentos... rabiscos em geral.
+          <br>Um lugar qualquer, de uma autora qualquer, com pensamentos quaisquer.</p>
+        <p><b>Atenção:</b> são apenas pensamentos. Se não concorda, lembre-se que é apenas uma opinião. Espero que a respeite.
+
+Boa leitura!</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>A Loba
+          <br>Uma fanfic Elsword.</h3>
+           <div class="flex">
+          <div class="gallery">
+            <a target="_blank" href="http://my.w.tt/UiNb/1jQ6UBneSD">
+              <img src="https://a.wattpad.com/cover/66796235-256-k532162.jpg" alt="A Loba">
+            </a>
+          </div>
+        </div>
+        <p>Na tentativa de salvar o reino de Velder, o Grupo de Busca El encontra Lunna, uma velha amiga de Ara e que se mostrará muito fiel à seus novos amigos. Mas para um certo garoto de cabelos azuis, ela é mais do que uma amiga, pelo menos é isto o que seu coração diz.
+          <br>Quais aventuras eles irão encontrar? Será que eles conseguirão salvar Velder? O que acontecerá entre Lunna e Ciel?
+          <br>Saiba a resposta para todas essas perguntas e muito mais em um único clique.
+          <br>Boa leitura!</p>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="container-fluid bg-4 text-center">
+      <p><b>Copyright © Éllen Neves</b></p> 
+    </footer>
+    
+  </body>
+  </html>
