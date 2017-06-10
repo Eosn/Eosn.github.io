@@ -1,72 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
+  <title>Hillow</title>
   <meta charset="utf-8">
-  <title>Hillow = Hi + Hello + W at the end to make it prettier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="/css/design.css">
 </head>
 <body>
-  <header><h1>Dados Gerais</h1></header>
-   <ul>
-  <li><a href="https://eosn.github.io/html/index.html">Dados Gerais</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Portfólio</a>
-    <div class="dropdown-content">
-      <a href="https://eosn.github.io/html/port.html">Geral</a>
-      <a href="#">Português</a>
-      <a href="#">Matemática</a>
-      <a href="#">Física</a>
-      <a href="#">História</a>
-      <a href="#">Geografia</a>
-      <a href="#">Filosofia</a>
-      <a href="#">Sociologia</a>
-      <a href="#">Inglês</a>
-      <a href="#">Artes</a>
-      <a href="https://eosn.github.io/html/tecnico.html">Técnico</a>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="glyphicon glyphicon-heart"></span>                     
+      </button>
+      <a class="navbar-brand" href="https://eosn.github.io/html/index.html">Hillow</a>
     </div>
-  </li>
-  <li><a href="https://www.facebook.com/ellen.neves.1675">Facebook</a></li>
-  <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
-  <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>
-  <li><a href="https://www.wattpad.com/user/Lunnan_">Wattpad</a></li>
-</ul>
-   <article class="inlineBlock alignRight">
-    <img src="https://scontent.fpoa10-1.fna.fbcdn.net/v/t1.0-9/17342607_1969311189959097_6843919166200273916_n.jpg?oh=02ed691911d9dbdb685eb0d73b0f46d4&oe=596A7277" width="120" height ="120"/>
-<table>
-  <tr>
-    <td>Nome:</td>
-    <td>Éllen Oliveira Silva Neves</td>
-  </tr>
-  <tr>
-    <td>Idade:</td>
-    <td>14 anos</td>
-  </tr>
-  <tr>
-    <td>Nascida em:</td>
-    <td>Serra - ES</td>
-  </tr>
-  <tr>
-    <td>Mora em:</td>
-    <td>Barcelona, Serra - ES</td>
-  </tr>
-</table>
-  </article>
-  <h2>Informações Pessoais</h2>
-  <p><b>Hobbies:</b></p>
-    <p>Desenhar
-    <br>Cantar
-    <br>Ler
-    <br>Jogar</p>
-  <p><b>O que quero aprender:</b></p>
-    <p>Tocar violão
-    <br>Programar</p>
-  <h2>Mais</h2>
-  <p><i>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it.
-    <br>One of the reasons that I don't like the word 'famous' is because than people uses it afterwards. It's like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same guy after it. People thinks they can label your life." <b>- Harry Styles</b></i></p>
-    <p></p>
-    <p><i>"One Direction is who we are and who we'll always be." <b>- Liam Payne</b></i></p>
-    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yjmp8CoZBIo" frameborder="0" allowfullscreen></iframe></center>
-    <p></p>
-    <footer><h3>Copyright © Éllen Neves</h3></footer>
-  </body>
-  </html>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.facebook.com/eosn.s2">Facebook</a></li>
+        <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
+        <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>
+        <li><a href="https://www.wattpad.com/user/Lunnan_">Wattpad</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://eosn.github.io/html/port.html">Portfólio <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="https://eosn.github.io/html/tecnico.html">Técnico</a></li>
+        </ul>
+        </li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center">
+  <h3 class="title">Hillow = Hi + Hello + W at the end to make it prettier</h3>
+  <img src="https://scontent-gru2-1.xx.fbcdn.net/v/t1.0-9/18839162_2007430672813815_3314556647619777822_n.jpg?oh=6eec9561ff3ce1c82c241818d8960045&oe=59A94D00" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
+  <table class="table">
+        <tbody>
+          <tr>
+            <td><b>Nome:</b></td>
+            <td>Éllen Oliveira Silva Neves</td>
+          </tr>
+          <tr>
+            <td><b>Idade:</b></td>
+            <td>14 anos.</td>
+          </tr>
+          <tr>
+            <td><b>De:</b></td>
+            <td>Serra - ES</td>
+          </tr>
+        </tbody>
+        </table>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3 class="Subtitle-1">Who Am I?</h3>
+  <p>Nascida da arte, mas quase que proibida de viver nela, dela e para ela.
+
+Semideusa desde que aprendeu a ler, foi o primeiro livro com mais de 20 páginas que leu.
+
+<br>Os quadrinhos a acompanham, mesmo que não possa comprar mais HQ's.
+
+<br>Está no castelo apenas pela comida, mas - diferentemente de Meri - não vai se render ao príncipe.
+
+<br>Sonha alto. Ser independente, livre. Feliz. Esses são os maiores desejos dela. Ela almeja isso.
+
+<br>Directioner até a alma, não ouse criticá-la por isso. Ela pode até respeitar sua opinião, mas também deseja ser respeitada.
+
+<br>Desenhar é o que ela faz. É puro impulso. É natural. Faz parte dela e ninguém pode mudar isso.
+
+<br>Cantar é tão natural quanto. Não passa um minuto sem que sequer pense em música. Ela vive música, respira, come, dorme. Tudo para ela é música.
+
+<br>Tinha medo do Dobby quando criança, mas aprendeu a adorar esse elfo doméstico que fez de tudo para salvar nosso querido Harry. Aliás, dez pontos para a Grifinória.
+
+<br>É Lufana de coração, apesar de alguns de seus amigos acharem que se daria bem na Corvinal.
+
+<br>Seu defeito mortal é se preocupar demais com seus amigos. Não ouse falar mal deles.
+
+<br>Não dá a mínima para a opinião dos outros. Saltita de frente, costas, lado e diagonal. Pode dizer que é louca que ela irá concordar.
+
+<br>Crê que o dia mais feliz da vida dela será quando finalmente sair de casa e tudo o que deseja é ter seu próprio lugar.</p>
+
+<p><center> O nome dela é Berry Éllen, e ela é a mulher mais rápida do mundo.</center></p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-heart"></span>
+  </a>
+</div>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Favorite Quotes</h3><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <p>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it.
+   <br>One of the reasons that I don't like the word 'famous' is because then people uses it afterwards. They go like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same guy after it. People think they can label your life." <b>- Harry Styles</b></p>
+      <p>"We're not who we used to be
+          <br>We don't see what we used to see
+          <br>We're just two ghosts swimming in a glass half empty
+          <br>Trying to remember how it feels to have a heartbeat" <b>- Two Ghosts, Harry Styles</b></p>
+    </div>
+    <div class="col-sm-6"> 
+      <p>"Quando ainda era adolescente, eu tive um amigo que me ensinou a gostar de música. Na verdade eu já gostava, mas ele me fez perceber que música não é só para ouvir. É para sentir. É o encontro entre a melodia ideal e a letra perfeita. E que, se usarmos a música certa na ocasião adequada, podemos proporcionar os mais diversos sentimentos, fazer com que ela fale por nós, passe mensagens... E foi isso que eu tentei fazer no meu filme. Esse meu amigo me mostrou que a música permanece, que, mesmo que os acontecimentos da vida nos separem de quem gostamos, a trilha sonora imortaliza os momentos vividos juntos. Quem nunca escutou uma melodia no rádio e se lembrou de alguém? A música tem esse poder. E foi por isso que eu escolhi fazer pós-graduação em trilha sonora, em homenagem a esse meu amigo. Porque eu sei que, a cada trilha que eu montar, vou me lembrar dele. E essa foi a forma que eu encontrei de ter essa pessoa que me ensinou coisas tão valiosas sempre junto de mim."
+  <br><b>Fani — Fazendo Meu Filme 4</b></p>
+    </div>
+    <div class="col-sm-12">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yjmp8CoZBIo" frameborder="0" allowfullscreen></iframe>
+  </div>
+  </div>
+</div>
+
+<footer class="container-fluid bg-4 text-center">
+  <p>Copyright © Éllen Neves</p> 
+</footer>
+
+</body>
+</html>
