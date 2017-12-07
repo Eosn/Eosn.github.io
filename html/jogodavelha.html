@@ -14,6 +14,8 @@
     font: 20px Montserrat, sans-serif;
     line-height: 1.8;
     text-align: center;
+    background-image: url(https://i.pinimg.com/564x/98/28/33/9828337c4807133efb15c874f1e836dc.jpg);
+    background-repeat: repeat;
   }
   
   p {
@@ -52,15 +54,12 @@
     color: #FF0037 !important;
   }
   
-  table, td, th {    
+  table, td, th, img {    
     border: 1px solid #ddd;
     text-align: center;
-  }
-  
-  table {
     border-collapse: collapse;
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
   }
   
   .btn {
@@ -92,11 +91,18 @@
   </style>
   
   <script>
-  function mudaquadrado(id){
-    var src = document.getElementById(id).src;
-    alert(src.src)
+  var jogador = "C:\Users\ellen\Pictures\Idosas Game\estrela.png";
+  
+  function mudaquadrado(img){
+    img.src = jogador;
+    
+    if (jogador == "C:\Users\ellen\Pictures\IdosasGame\estrela.png") {
+      jogador = "C:\Users\ellen\Pictures\IdosasGame\lua.png";
+    } else {
+      jogador = "C:\Users\ellen\Pictures\IdosasGame\estrela.png";
+    }
   }
-  </script>
+</script>
 </head>
 <body>
   <nav class="navbar navbar-default">
@@ -127,19 +133,19 @@
   <input type="button" class="btn2 btn-md" id="Limpar" value="Novo Jogo" onclick="novo();"/>
   <table>
     <tr>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q11" onclick="mudaquadrado(id);"></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q12" onclick="mudaquadrado(id);"/></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q13" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q11" onclick="mudaquadrado(this);"></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q12" onclick="mudaquadrado(this);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q13" onclick="mudaquadrado(this);"/></td>
     </tr>
     <tr>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q21" onclick="mudaquadrado(id);"/></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q22" onclick="mudaquadrado(id);"/></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q23" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q21" onclick="mudaquadrado(this);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q22" onclick="mudaquadrado(this);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q23" onclick="mudaquadrado(this);"/></td>
     </tr>
     <tr>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q31" onclick="mudaquadrado(id);"/></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q32" onclick="mudaquadrado(id);"/></td>
-      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q33" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q31" onclick="mudaquadrado(this);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q32" onclick="mudaquadrado(this);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\IdosasGame\vazio.png" id="q33" onclick="mudaquadrado(this);"/></td>
     </tr>
   </table>
 </body>
