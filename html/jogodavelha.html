@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Idosa's Game</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .margin {
+    margin-bottom: 45px;
+    color: #FFA6BA;
+  }
+  
+  .title {
+    margin-bottom: 45px;
+  }
+  
+  .Subtitle-1 {
+    color: #00FFA2;
+  }	
+  
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  
+  .navbar-nav  li a:hover {
+    color: #FF0037 !important;
+  }
+  
+  table, td, th {    
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn {
+    backgound-color: #f4f8ff;
+    border-color: #f4f8ff;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn2 {
+    backgound-color: #f4f8ff;
+    border-color: #f4f8ff;
+    width: 100%;
+    height: 10%;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  
+  .btn2:hover {
+    background-color: #c6dcff;
+    border-color: #c6dcff;
+  }
+  
+  .btn:hover {
+    background-color: #c6dcff;
+    border-color: #c6dcff;
+  }
+  </style>
+  
+  <script>
+  function mudaquadrado(id){
+    var src = document.getElementById(id).src;
+    alert(src.src)
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-heart"></span>
+        </button>
+        <a class="navbar-brand" href="https://eosn.github.io/html/index.html">Hillow</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="https://www.facebook.com/eosn.s2">Facebook</a></li>
+          <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
+          <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>
+          <li><a href="https://www.wattpad.com/user/Eosn_S2">Wattpad</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://eosn.github.io/html/port.html">Portfólio <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="https://eosn.github.io/html/port.html">Geral</a></li>
+              <li><a href="https://eosn.github.io/html/calculadora.html">Calculadora</a></li>
+              <li><a href="https://eosn.github.io/html/jogodavelha.html">Jogo da Velha</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <input type="button" class="btn2 btn-md" id="Limpar" value="Novo Jogo" onclick="novo();"/>
+  <table>
+    <tr>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q11" onclick="mudaquadrado(id);"></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q12" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q13" onclick="mudaquadrado(id);"/></td>
+    </tr>
+    <tr>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q21" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q22" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q23" onclick="mudaquadrado(id);"/></td>
+    </tr>
+    <tr>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q31" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q32" onclick="mudaquadrado(id);"/></td>
+      <td><img src="C:\Users\ellen\Pictures\Idosas Game\espaco.png" id="q33" onclick="mudaquadrado(id);"/></td>
+    </tr>
+  </table>
+</body>
+</html>
