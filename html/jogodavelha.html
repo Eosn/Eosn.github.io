@@ -55,7 +55,7 @@
   }
   
   table, td, th, img {    
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     text-align: center;
     border-collapse: collapse;
     width: 150px;
@@ -91,17 +91,61 @@
   </style>
   
   <script>
-  var jogador = "eosn.github.io/img/estrela.png";
+  var jogador = "http://www.freepngimg.com/download/star/2-gray-star-png-image.png";
   
   function mudaquadrado(img){
-    img.src = jogador;
-    
-    if (jogador == "eosn.github.io/img/estrela.png") {
-      jogador = "eosn.github.io/img/lua.png";
+    if (img.src == "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br"){
+      if (jogador == "http://www.freepngimg.com/download/star/2-gray-star-png-image.png") {
+        jogador = "https://static1.squarespace.com/static/570bfae2b09f95f744a49e56/t/58044452be6594564b293617/1476674652227/5+full+moon.png";
+      } else {
+        jogador = "http://www.freepngimg.com/download/star/2-gray-star-png-image.png";
+      }
     } else {
-      jogador = "eosn.github.io/img/estrela.png";
+      jogador = img.src;
+    }
+    img.src = jogador;
+    vencedor();
+  }
+  
+  function vencedor(){
+    q11 = document.getElementById('q11')
+    q12 = document.getElementById('q12')
+    q13 = document.getElementById('q13')
+    q21 = document.getElementById('q21')
+    q22 = document.getElementById('q22')
+    q23 = document.getElementById('q23')
+    q31 = document.getElementById('q31')
+    q32 = document.getElementById('q32')
+    q33 = document.getElementById('q33')
+    
+    if ((q11.src == q12.src) && (q11.src == q13.src) && (q11.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q11.src == q21.src) && (q11.src == q31.src) && (q11.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q11.src == q22.src) && (q11.src == q33.src) && (q11.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q21.src == q22.src) && (q21.src == q23.src) && (q21.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q31.src == q32.src) && (q31.src == q33.src) && (q31.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q31.src == q22.src) && (q31.src == q13.src) && (q31.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q12.src == q22.src) && (q12.src == q32.src) && (q12.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")
+    ||
+    (q13.src == q23.src) &&  (q13.src == q33.src) && (q13.src != "https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br")){
+      
+      if ((q11.src == "http://www.freepngimg.com/download/star/2-gray-star-png-image.png")
+      ||
+      (q22.src == "http://www.freepngimg.com/download/star/2-gray-star-png-image.png")
+      ||
+      (q33.scr == "http://www.freepngimg.com/download/star/2-gray-star-png-image.png")){
+        alert('Jogador 2 é o vencedor!')
+      } else {
+        alert('Jogador 1 é o vencedor!')
+      }
     }
   }
+  
 </script>
 </head>
 <body>
@@ -133,19 +177,19 @@
   <input type="button" class="btn2 btn-md" id="Limpar" value="Novo Jogo" onclick="novo();"/>
   <table>
     <tr>
-      <td><img src="eosn.github.io/img/vazio.png" id="q11" onclick="mudaquadrado(this);"></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q12" onclick="mudaquadrado(this);"/></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q13" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q11" onclick="mudaquadrado(this);"></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q12" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q13" onclick="mudaquadrado(this);"/></td>
     </tr>
     <tr>
-      <td><img src="eosn.github.io/img/vazio.png" id="q21" onclick="mudaquadrado(this);"/></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q22" onclick="mudaquadrado(this);"/></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q23" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q21" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q22" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q23" onclick="mudaquadrado(this);"/></td>
     </tr>
     <tr>
-      <td><img src="eosn.github.io/img/vazio.png" id="q31" onclick="mudaquadrado(this);"/></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q32" onclick="mudaquadrado(this);"/></td>
-      <td><img src="eosn.github.io/img/vazio.png" id="q33" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q31" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q32" onclick="mudaquadrado(this);"/></td>
+      <td><img src="https://vignette1.wikia.nocookie.net/pokepediabr/images/5/50/Vazio.png/revision/latest?cb=20160221042137&path-prefix=pt-br" id="q33" onclick="mudaquadrado(this);"/></td>
     </tr>
   </table>
 </body>
