@@ -1,183 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-  <title>Hillow</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  
-  body {
-      font: 20px Montserrat, sans-serif;
-      line-height: 1.8;
-  }
-  
-  p {
-    font-size: 16px;
-  }
-  
-  .margin {
-    margin-bottom: 45px;
-    color: #FFA6BA;
-  }
-
-  .title {
-    margin-bottom: 45px;
-  }
-
-  .Subtitle-1 {
-     color: #00FFA2;
-  }
-  
-  .bg-1 { 
-      background-color: #00FFA2;
-      color: #ffffff;
-  }
-  
-  .bg-2 { 
-      background-color: #5D0075;
-      color: #ffffff;
-  }
-  
-  .bg-3 { 
-      background-color: #2f2f2f;
-      color: #FFD9E1;
-  }
-  
-  .bg-4 { 
-      background-color: #FFFFFF;
-      color: #2f2f2f;
-  }
-  
-  .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
-  }
-  
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
-  }
-  
-  .navbar-nav  li a:hover {
-      color: #FF0037 !important;
-  }
-
-  .table {
-    color: white;
-  }
-  </style>
+    <title>Hillow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="glyphicon glyphicon-heart"></span>
+        </button>
+                <a class="navbar-brand" href="https://eosn.github.io/html/index.html">Hillow</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="https://twitter.com/Ch3ee_">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ch3ee_/?hl=pt-br">Instagram</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://eosn.github.io/html/port.html">Portfólio <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://eosn.github.io/html/port.html">Geral</a></li>
+                            <li><a href="https://eosn.github.io/html/calculadora.html">Calculadora</a></li>
+                            <li><a href="https://eosn.github.io/html/jogodavelha.html">Jogo da Velha</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="glyphicon glyphicon-heart"></span>                     
-      </button>
-      <a class="navbar-brand" href="https://eosn.github.io/html/index.html">Hillow</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="https://www.facebook.com/eosn.s2">Facebook</a></li>
-        <li><a href="https://twitter.com/Eosn_S2">Twitter</a></li>
-        <li><a href="https://www.instagram.com/eosn_s2/?hl=pt-br">Instagram</a></li>
-        <li><a href="https://www.wattpad.com/user/Eosn_S2">Wattpad</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="https://eosn.github.io/html/port.html">Portfólio <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="https://eosn.github.io/html/port.html">Geral</a></li>
-          <li><a href="https://eosn.github.io/html/calculadora.html">Calculadora</a></li>
-          <li><a href="https://eosn.github.io/html/jogodavelha.html">Jogo da Velha</a></li>
-        </ul>
-        </li>  
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid bg-1 text-center">
-  <h3 class="title">Hillow = Hi + Hello + W at the end to make it prettier</h3>
-  <img src="https://scontent.fvix7-1.fna.fbcdn.net/v/t1.0-9/28577660_2139788906244657_7399079068860515836_n.jpg?_nc_cat=101&_nc_ht=scontent.fvix7-1.fna&oh=155a8cda3ed2bd9dbf5fe2769172e590&oe=5CA13F6F" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="250" height="250">
-  <table class="table">
-        <tbody>
-          <tr>
-            <td><b>Nome:</b></td>
-            <td>Éllen Neves</td>
-          </tr>
-          <tr>
-            <td><b>Idade:</b></td>
-            <td>16 anos</td>
-          </tr>
-          <tr>
-            <td><b>De:</b></td>
-            <td>Serra - ES</td>
-          </tr>
-        </tbody>
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="title">Hillow = Hi + Hello + W at the end to make it prettier</h3>
+        <img src="https://scontent.fvix7-1.fna.fbcdn.net/v/t1.0-9/28577660_2139788906244657_7399079068860515836_n.jpg?_nc_cat=101&_nc_ht=scontent.fvix7-1.fna&oh=155a8cda3ed2bd9dbf5fe2769172e590&oe=5CA13F6F" class="img-responsive img-circle margin" style="display:inline"
+            alt="Bird" width="250" height="250">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td><b>Nome:</b></td>
+                    <td>Éllen Neves</td>
+                </tr>
+                <tr>
+                    <td><b>Idade:</b></td>
+                    <td>16 anos</td>
+                </tr>
+                <tr>
+                    <td><b>De:</b></td>
+                    <td>Serra - ES</td>
+                </tr>
+            </tbody>
         </table>
-</div>
-
-<div class="container-fluid bg-2 text-center">
-  <h3 class="Subtitle-1">Who Am I?</h3>
-  <p>Ela é música, ela é leitura, desenho e fotografia. É uma flor que resiste às mais tenebrosas tempestades, que,
-    <br/>ao mundo, mostra apenas seu melhor. Ela é artista, ela vê o mundo de ponta-cabeça e conserta-o a seu modo. Ela é devoradora de palavras, cores e detalhes.
-
-  <br/>Ela é uma caixa de vidro blindado, um Espelho de Ojesed que mostra sua Pedra Filosofal apenas àqueles que não
-    <br/>possuem a real intenção de usá-la. Seus olhos são o espelho de sua alma e sua mente, um furacão.
-
-  <br/>Ela é brisa, vento e mar; filha de Poseidon, calma 99% do tempo, mas basta uma pedra atirada com determinada força para um tsunami
-    <br/>começar. Ela compartilha de sua luz com o mundo.
-
-  <br/>Ela é dúvida, mas também é certeza, ela é ansiedade e controle, leveza e dureza, suavidade e seriedade. Ela ama,
-    <br/>ela odeia, ela chora quando frustrada e escreve páginas e páginas quando com raiva. Ela é mente, corpo e alma.
-
-  <br/>Ela é racionalidade acima de emoção, faz suas escolhas em questão de milissegundos e, nesse meio-tempo, calcula
-    <br/>tudo o que pode acontecer a partir dali. Ela não tem medo de tentar.
-
-  <br/>Ela é Yang, ela é organização, ela pula no meio da bagunça para salvar seus amigos, ela faz o bem sem esperar nada
-    <br/>em troca. Ela é aquela rara pessoa honesta e que todos questionam seus atos, e tudo o que ela mais quer é que entendam que ela pode ser feliz consigo mesma.
-
-  <br/>Ela é perfeccionista, mas não ao extremo. Ela é um unicórnio, mas também é sereia. Ela é tudo o que ela quiser ser, quando ela quiser ser.</p>
-
-  <p>Ela é ela, mais ninguém.</p>
-  
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-heart"></span>
-  </a>
-</div>
-
-<div class="container-fluid bg-3 text-center">    
-  <h3 class="margin">Favorite Quotes</h3><br>
-  <div class="row">
-    <div class="col-sm-6">
-      <p>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it.
-   <br>One of the reasons that I don't like the word 'famous' is because then people uses it afterwards. They go like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same guy after it. People think they can label your life." <b>- Harry Styles</b></p>
-      <p>"We're not who we used to be
-          <br>We don't see what we used to see
-          <br>We're just two ghosts swimming in a glass half empty
-          <br>Trying to remember how it feels to have a heartbeat" <b>- Two Ghosts, Harry Styles</b></p>
     </div>
-    <div class="col-sm-6"> 
-      <p>"Quando ainda era adolescente, eu tive um amigo que me ensinou a gostar de música. Na verdade eu já gostava, mas ele me fez perceber que música não é só para ouvir. É para sentir. É o encontro entre a melodia ideal e a letra perfeita. E que, se usarmos a música certa na ocasião adequada, podemos proporcionar os mais diversos sentimentos, fazer com que ela fale por nós, passe mensagens... E foi isso que eu tentei fazer no meu filme. Esse meu amigo me mostrou que a música permanece, que, mesmo que os acontecimentos da vida nos separem de quem gostamos, a trilha sonora imortaliza os momentos vividos juntos. Quem nunca escutou uma melodia no rádio e se lembrou de alguém? A música tem esse poder. E foi por isso que eu escolhi fazer pós-graduação em trilha sonora, em homenagem a esse meu amigo. Porque eu sei que, a cada trilha que eu montar, vou me lembrar dele. E essa foi a forma que eu encontrei de ter essa pessoa que me ensinou coisas tão valiosas sempre junto de mim."
-  <br><b>Fani — Fazendo Meu Filme 4</b></p>
-    </div>
-    <div class="col-sm-12">
-      <a href="https://open.spotify.com/user/%C3%A9llneves/playlist/3vNSMaSBaRSsk6NOnO80uZ" style="color: #00A550">Playlist no Spotify</a>
-  </div>
-  </div>
-</div>
 
-<footer class="container-fluid bg-4 text-center">
-  <p><b>Copyright © Éllen Neves</b></p> 
-</footer>
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="Subtitle-1">Who Am I?</h3>
+        <p>Ela é música, ela é leitura, desenho e fotografia. É uma flor que resiste às mais tenebrosas tempestades, que,
+            <br />ao mundo, mostra apenas seu melhor. Ela é artista, ela vê o mundo de ponta-cabeça e conserta-o a seu modo. Ela é devoradora de palavras, cores e detalhes.
+
+            <br />Ela é uma caixa de vidro blindado, um Espelho de Ojesed que mostra sua Pedra Filosofal apenas àqueles que não
+            <br />possuem a real intenção de usá-la. Seus olhos são o espelho de sua alma e sua mente, um furacão.
+
+            <br />Ela é brisa, vento e mar; filha de Poseidon, calma 99% do tempo, mas basta uma pedra atirada com determinada força para um tsunami
+            <br />começar. Ela compartilha de sua luz com o mundo.
+
+            <br />Ela é dúvida, mas também é certeza, ela é ansiedade e controle, leveza e dureza, suavidade e seriedade. Ela ama,
+            <br />ela odeia, ela chora quando frustrada e escreve páginas e páginas quando com raiva. Ela é mente, corpo e alma.
+
+            <br />Ela é racionalidade acima de emoção, faz suas escolhas em questão de milissegundos e, nesse meio-tempo, calcula
+            <br />tudo o que pode acontecer a partir dali. Ela não tem medo de tentar.
+
+            <br />Ela é Yang, ela é organização, ela pula no meio da bagunça para salvar seus amigos, ela faz o bem sem esperar nada
+            <br />em troca. Ela é aquela rara pessoa honesta e que todos questionam seus atos, e tudo o que ela mais quer é que entendam que ela pode ser feliz consigo mesma.
+
+            <br />Ela é perfeccionista, mas não ao extremo. Ela é um unicórnio, mas também é sereia. Ela é tudo o que ela quiser ser, quando ela quiser ser.</p>
+
+        <p>Ela é ela, mais ninguém.</p>
+
+        <a href="#" class="btn btn-default btn-lg">
+            <span class="glyphicon glyphicon-heart"></span>
+        </a>
+    </div>
+
+    <div class="container-fluid bg-3 text-center">
+        <h3 class="margin">Favorite Quotes</h3><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>"When people label other people as 'famous', they take away a lot of subtance that they have as a person. I don't like it.
+                    <br>One of the reasons that I don't like the word 'famous' is because then people uses it afterwards. They go like: 'he was famous' or 'he used to be famous'. Like, I was a guy before, I was the same guy during it and I'm the same
+                    guy after it. People think they can label your life." <b>- Harry Styles</b></p>
+                <p>"We're not who we used to be
+                    <br>We don't see what we used to see
+                    <br>We're just two ghosts swimming in a glass half empty
+                    <br>Trying to remember how it feels to have a heartbeat" <b>- Two Ghosts, Harry Styles</b></p>
+            </div>
+            <div class="col-sm-6">
+                <p>"Quando ainda era adolescente, eu tive um amigo que me ensinou a gostar de música. Na verdade eu já gostava, mas ele me fez perceber que música não é só para ouvir. É para sentir. É o encontro entre a melodia ideal e a letra perfeita.
+                    E que, se usarmos a música certa na ocasião adequada, podemos proporcionar os mais diversos sentimentos, fazer com que ela fale por nós, passe mensagens... E foi isso que eu tentei fazer no meu filme. Esse meu amigo me mostrou que
+                    a música permanece, que, mesmo que os acontecimentos da vida nos separem de quem gostamos, a trilha sonora imortaliza os momentos vividos juntos. Quem nunca escutou uma melodia no rádio e se lembrou de alguém? A música tem esse poder.
+                    E foi por isso que eu escolhi fazer pós-graduação em trilha sonora, em homenagem a esse meu amigo. Porque eu sei que, a cada trilha que eu montar, vou me lembrar dele. E essa foi a forma que eu encontrei de ter essa pessoa que me ensinou
+                    coisas tão valiosas sempre junto de mim."
+                    <br><b>Fani — Fazendo Meu Filme 4</b></p>
+            </div>
+            <div class="col-sm-12">
+                <a href="https://open.spotify.com/user/%C3%A9llneves/playlist/3vNSMaSBaRSsk6NOnO80uZ" style="color: #00A550">Playlist no Spotify</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-4 text-center">
+        <p><b>Copyright © Éllen Neves</b></p>
+    </footer>
 
 </body>
+
 </html>
